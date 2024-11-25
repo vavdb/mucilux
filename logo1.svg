@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Background -->
+  <defs>
+    <!-- Gradient for droplet -->
+    <linearGradient id="tealGradient" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#00A8A8" />
+      <stop offset="100%" stop-color="#008080" />
+    </linearGradient>
+  </defs>
+
+  <!-- Droplet Shape -->
+  <path d="M100,10 C80,60 50,110 50,150 C50,200 80,260 100,290 C120,260 150,200 150,150 C150,110 120,60 100,10 Z" 
+        fill="url(#tealGradient)" stroke="none" />
+
+  <!-- Highlight on Droplet -->
+  <ellipse cx="90" cy="80" rx="30" ry="70" fill="white" opacity="0.2" />
+
+  <!-- Gold Spiral -->
+  <path d="M100,150 
+           m-2,0 
+           a2,2 0 1,1 4,0 
+           a2,2 0 1,1 -4,0
+           m-6,6 
+           a8,8 0 1,1 12,-6 
+           a8,8 0 1,1 -12,6 
+           m-12,12 
+           a16,16 0 1,1 24,-12 
+           a16,16 0 1,1 -24,12" 
+        fill="none" stroke="#FFD700" stroke-width="2" />
+
+  <!-- Optional Shadow -->
+  <ellipse cx="100" cy="290" rx="40" ry="10" fill="#000" opacity="0.1" />
+</svg>
